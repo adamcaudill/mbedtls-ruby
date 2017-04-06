@@ -24,3 +24,5 @@ doc/
 *.bundle
 
 *.sublime-workspace
+
+*.idea
