@@ -1,4 +1,4 @@
-PolarSSL for Ruby
+mbed TLS for Ruby
 =================
 
 # IMPORTANT
@@ -8,27 +8,11 @@ This repository is a fork of [michiels/polarssl-ruby](https://github.com/michiel
 ---------------------------
 
 * API documentation: http://michiels.github.io/polarssl-ruby/doc
-* RubyGems.org: http://rubygems.org/gems/polarssl
-
-<table>
-  <tr>
-    <th>PolarSSL/mbed TLS version</th>
-    <th>Gem version</th>
-  </tr>
-  <tr>
-    <td>&lt;= 1.2.x</td><td>0.0.7</td>
-  </tr>
-  <tr>
-    <td>&gt;= 1.3.0 and &lt; 1.3.10</td><td>1.0.1</td>
-  </tr>
-  <tr>
-    <td>&gt;= 1.3.10</td><td>1.0.2</td>
-  </tr>
-</table>
+* RubyGems.org: https://rubygems.org/gems/mbedtls
 
 ## Description
 
-With PolarSSL for Ruby, you can use SSL and cryptography functionality from PolarSSL in your Ruby programs.
+With mbed TLS for Ruby, you can use SSL and cryptography functionality from mbed TLS in your Ruby programs.
 
 ## Features
 
@@ -37,33 +21,22 @@ With PolarSSL for Ruby, you can use SSL and cryptography functionality from Pola
 
 ## Installation
 
-PolarSSL is cryptographically signed. To be sure the gem you install hasn't been tampered with:
-
-Add my public key as a trusted certificate:
-
+Install the gem:
 
 ```
-gem cert --add <(curl -Ls https://raw.github.com/michiels/polarssl-ruby/master/certs/michiels.pem)
+gem install mbedtls
 ```
-
-Then install the gem:
-
-```
-gem install polarssl -P HighSecurity
-```
-
-The `-P HighSecurity` will verify signed gems.
 
 Or in your Gemfile:
 
 ```
-gem "polarssl", "~> 1.0.2"
+gem "mbedtls", "~> 0.1"
 ```
 
 And install using:
 
 ```
-bundle install --trust-policy HighSecurity
+bundle install
 ```
 
 ## Usage
@@ -145,7 +118,7 @@ sudo apt-get install libpolarssl-dev
 On Mac OS X with [Homebrew](http://mxcl.github.io/homebrew/):
 
 ```
-brew install polarssl
+brew install mbedtls
 ```
 
 The following steps and commands are followed during development:
@@ -171,8 +144,9 @@ You will need to take this into account when using PolarSSL and this Ruby extens
 own software.
 
 ```
-polar-ssl-ruby - A Ruby extension for using PolarSSL.
-Copyright (C) 2013  Michiel Sikkes
+mbedtls-ruby - A Ruby extension for using mbed TLS.
+Copyright (C) 2017 Adam Caudill (adam@adamcaudill.com)
+Copyright (C) 2013 Michiel Sikkes
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by

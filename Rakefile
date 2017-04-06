@@ -3,7 +3,7 @@ require 'rake/extensiontask'
 require 'rake/clean'
 require 'sdoc'
 
-NAME = "polarssl"
+NAME = "mbedtls"
 DLEXT = RbConfig::CONFIG['DLEXT']
 
 CLEAN.include("ext/**/*{.o,.log,.#{DLEXT}}")
@@ -37,9 +37,9 @@ end
 desc "Signs the gem"
 task :sign_gem do
   require 'digest/sha2'
-  built_gem_path = "polarssl-#{ENV["VERSION"]}.gem"
+  built_gem_path = "mbedtls-#{ENV["VERSION"]}.gem"
   checksum = Digest::SHA512.new.hexdigest(File.read(built_gem_path))
-  checksum_path = "checksum/polarssl-#{ENV["VERSION"]}.gem.sha512"
+  checksum_path = "checksum/mbedtls-#{ENV["VERSION"]}.gem.sha512"
   File.open(checksum_path, 'w' ) {|f| f.write(checksum) }
 end
 

@@ -1,5 +1,3 @@
 module PolarSSL
-
-  VERSION = '1.0.2'
-
+  VERSION = '0.1.0.beta2'
 end
