@@ -1,6 +1,12 @@
 PolarSSL for Ruby
 =================
 
+# IMPORTANT
+
+This repository is a fork of [michiels/polarssl-ruby](https://github.com/michiels/polarssl-ruby) - it is being updated to reflect the new name of mbed TLS, and the changes that have occured over the last couple years since polarssl-ruby was last updated. For the moment, this repository should be seen as expirimental and unstable.
+
+---------------------------
+
 * API documentation: http://michiels.github.io/polarssl-ruby/doc
 * RubyGems.org: http://rubygems.org/gems/polarssl
 
